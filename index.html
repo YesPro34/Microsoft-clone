@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="h-screen">
+  <header >
+    <nav class="flex bg-white justify-between items-center h-14">
+        <div class="flex gap-5 items-center px-4" > 
+            <div class="flex justify-between items-center  lg:w-auto">
+                <ion-icon onclick="menuToggle(this)"  class="px-2 h-8 w-8  md:hidden  " name="menu"></ion-icon>
+                <ion-icon class="px-2 h-8 w-8 md:hidden " name="search"></ion-icon>
+                <a href="https://www.microsoft.com/fr-ma/">
+                    <img class="w-16 h-6 w-20 w-1/2" src="images/MicrosoftLogo.png" alt="">
+                </a>
+                
+            </div>
+            <div class="nav-list absolute flex  lg:static bg-gray-200 md:bg-white left-0 top-[-100%] items-center w-full px-5" >
+                <ul class="flex justify-between gap-5 lg:flex-row flex-col py-4">
+                    <li><a class="hover:underline" href="https://www.microsoft.com/fr/microsoft-365?rtc=1">Microsoft 360</a></li>
+                    <li><a class="hover:underline" href="https://www.microsoft.com/fr/microsoft-365/microsoft-office?rtc=1">Office</a></li>
+                    <li><a class="hover:underline" href="#">windows</a></li>
+                    <li><a class="hover:underline" href="#">Surface</a></li>
+                    <li><a class="hover:underline" href="#">Xboxe</a></li>
+                    <li><a class="hover:underline" href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-between gap-3 px-4">
+            <div>
+                <ul class="flex justify-between items-center gap-5 hidden  md:flex ">
+                    <li><a class="hover:underline justify-between items-center " href="#">All Microsoft<ion-icon class="px-2" name="chevron-down-outline"></ion-icon></a></li>
+                    <li><a class="hover:underline justify-between items-center " href="#">Search<ion-icon class="px-2" name="search"></ion-icon></a></li>
+                    <li><a class="hover:underline justify-between items-center " href="#">Cart<ion-icon class="px-2 " name="cart-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div>
+                <button>Sign in</button>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+  <div class="slider flex bg-gray-400 flex-col-reverse md:flex-row  md:items-center  py-5 ">
+    <div class="left px-10 max-w-[90vh] justify-center items-center md:items-baseline ">
+        <h1 class="text-4xl py-4 font-medium">Microsoft Copilot pour Microsoft 365</h1>
+        <div class="py-4 text-black">Gagnez du temps et concentrez-vous sur l’essentiel grâce à l’IA dans Microsoft 365 pour les PME.*</div>
+        <button class="py-2 px-4 bg-black hover:bg-gray-600 text-bold text-white font-bold rounded-sm">Click Me</button>
+    </div>
+    <div class="right">
+        <img  src="images/laptop.png" alt="">
+    </div>
+
+  </div>
+
+  <div class="promo flex space-y-9 md:flex-row flex-col items justify-center">
+
+    <div class="flex flex-row md:flex-col items-center mt-9 mx-4  space-x-2 items   ">
+        <img class="w-8 h-8" src="images/img1.png" alt="">
+        <span class="text-center">Microsoft windows OS</span>
+    </div>
+    <div class="flex flex-row md:flex-col items-center mx-4 space-x-2 ">
+        <img class="w-8 h-8" src="images/img2.png" alt="">
+        <span class="text-center">Xboxe the best game console ever</span>
+    </div>
+    <div class="flex flex-row md:flex-col items-center mx-4 space-x-2 ">
+        <img class="w-8 h-8" src="images/img3.png" alt="">
+        <span class="text-center">Choose Outlook  for Your Emailing service</span>
+    </div>
+    <div class="flex flex-row md:flex-col items-center mx-4 space-x-2 ">
+        <img class="w-8 h-8" src="images/img4.png" alt="">
+        <span class="text-center">New features in Microsoft Edge</span>
+    </div>
+
+  </div>
+
+  <div class="cards flex md:max-w-[80%] max-w-[90%] mt-12 justify-evenly items-center mx-auto">
+    <div class="md:max-w[30%] max-w-[45%]">
+        <img src="images/lap1.jpg" alt="">
+        <p class="py-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium 
+            sit quae consectetur blanditiis delectus dolorem aliquam repellendus tempora modi ducimus!</p>
+        <div class="flex items-center">  
+            <p class="font-bold mx-4 cursor-pointer hover:text-blue-500">Read more</p>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+    </div>
+     <div class="md:max-w[30%] max-w-[45%]">
+        <img src="images/lap1.jpg" alt="">
+        <p class="py-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium 
+            sit quae consectetur blanditiis delectus dolorem aliquam repellendus tempora modi ducimus!</p>
+        <div class="flex items-center">  
+            <p class="font-bold mx-4 cursor-pointer hover:text-blue-500">Read more</p>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+    </div>
+    
+    
+  </div>
+
+
+<div class="cards flex md:max-w-[80%] max-w-[90%] mt-12 justify-evenly items-center mx-auto">
+    <div class="md:max-w[30%] max-w-[45%]">
+        <img src="images/lap1.jpg" alt="">
+        <p class="py-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium 
+            sit quae consectetur blanditiis delectus dolorem aliquam repellendus tempora modi ducimus!</p>
+        <div class="flex items-center">  
+            <p class="font-bold mx-4 cursor-pointer hover:text-blue-500">Read more</p>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+    </div>
+     <div class="md:max-w[30%] max-w-[45%]">
+        <img src="images/lap1.jpg" alt="">
+        <p class="py-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium 
+            sit quae consectetur blanditiis delectus dolorem aliquam repellendus tempora modi ducimus!</p>
+        <div class="flex items-center">  
+            <p class="font-bold mx-4 cursor-pointer hover:text-blue-500 ">Read more</p>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+    </div>
+</div>
+
+    <footer class="mt-9 bg-[#F2F2F2]">
+        <div class="flex md:space-x-8  space-x-4  md:max-w-[60%] md:flex-row flex-col max-w-[60%] md:mx-auto mt-12 pt-12 pb-12">
+             <ul  class="mt-10  space-x-4 md:space-x-0 ">
+                <li class="font-bold ml-3 md:ml-0">Boutique & Support</li>
+                <li class="mb-2 mt-2">Profil du compte</li>
+                <li class="mb-2 mt-2">Centre de téléchargement</li>
+                <li class="mb-2 mt-2">Retours</li>
+                <li class="mb-2 mt-2">Suivi des commandes</li>
+                <li class="mb-2 mt-2">Support</li>
+            </ul>
+            
+            <ul class="mt-10">
+                <li class="font-bold ">Éducation</li>
+                <li class="mb-2 mt-2">Microsoft Éducation</li>
+                <li class="mb-2 mt-2">Appareils pour l’enseignement</li>
+                <li class="mb-2 mt-2">Microsoft Teams pour l’éducation</li>
+                <li class="mb-2 mt-2">Microsoft 365 Éducation</li>
+                <li class="mb-2 mt-2">Office Éducation</li>
+                <li class="mb-2 mt-2">Formation et développement des enseignants</li>
+                <li class="mb-2 mt-2">Offres pour étudiants et parents</li>
+                <li class="mb-2 mt-2">Azure pour les étudiants</li>
+            </ul>
+            <ul class="mt-10">
+                <li class="font-bold ">Entreprises</li>
+                <li class="mb-2 mt-2">Microsoft Cloud</li>
+                <li class="mb-2 mt-2">Sécurité Microsoft</li>
+                <li class="mb-2 mt-2">Azure</li>
+                <li class="mb-2 mt-2">Dynamics 365</li>
+                <li class="mb-2 mt-2">Microsoft 365</li>
+                <li class="mb-2 mt-2">Microsoft Advertising</li>
+                <li class="mb-2 mt-2">Microsoft Industry</li>
+                <li class="mb-2 mt-2">Microsoft Teams</li>
+            </ul>
+            <ul class="mt-10">
+                <li class="font-bold ">Développeur et IT</li>
+                <li class="mb-2 mt-2">Centre pour les développeurs</li>
+                <li class="mb-2 mt-2">Documentation</li>
+                <li class="mb-2 mt-2">Microsoft Learn</li>
+                <li class="mb-2 mt-2">Microsoft Tech Community</li>
+                <li class="mb-2 mt-2">Place de marché Azure</li>
+                <li class="mb-2 mt-2">AppSource</li>
+                <li class="mb-2 mt-2">Microsoft Power Platform</li>
+                <li class="mb-2 mt-2">Visual Studio</li>
+            </ul>
+
+        </div>
+    </footer>
+
+  <script>
+    var listElement = document.querySelector('.nav-list')
+    function menuToggle(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        listElement.classList.toggle('top-[8vh]')
+    }
+
+    
+  </script>
+</body>
+</html>
